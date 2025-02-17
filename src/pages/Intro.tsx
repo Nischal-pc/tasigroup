@@ -1,26 +1,28 @@
-import React from 'react';
-import { Play, BookOpen, Users, Zap } from 'lucide-react';
+import { Play, BookOpen, Users, Zap } from "lucide-react";
 
 const Intro = () => {
   const features = [
     {
       icon: BookOpen,
-      title: 'Smart Content Creation',
-      description: 'Generate assignments, quizzes, and course materials with AI assistance.',
-      gradient: 'from-blue-600 to-cyan-500'
+      title: "Smart Content Creation",
+      description:
+        "Generate assignments, quizzes, and course materials with AI assistance.",
+      gradient: "from-blue-600 to-cyan-500",
     },
     {
       icon: Users,
-      title: 'Personalized Learning',
-      description: 'Adapt content to different learning styles and student needs.',
-      gradient: 'from-purple-600 to-pink-500'
+      title: "Personalized Learning",
+      description:
+        "Adapt content to different learning styles and student needs.",
+      gradient: "from-purple-600 to-pink-500",
     },
     {
       icon: Zap,
-      title: 'Time-Saving Tools',
-      description: 'Streamline your workflow with automated grading and feedback.',
-      gradient: 'from-green-500 to-teal-500'
-    }
+      title: "Time-Saving Tools",
+      description:
+        "Streamline your workflow with automated grading and feedback.",
+      gradient: "from-green-500 to-teal-500",
+    },
   ];
 
   return (
@@ -31,7 +33,8 @@ const Intro = () => {
             Welcome to EVA
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your AI-powered teaching assistant that makes education more effective and engaging.
+            Your AI-powered teaching assistant that makes education more
+            effective and engaging.
           </p>
         </div>
 
@@ -51,9 +54,15 @@ const Intro = () => {
               key={index}
               className="group relative bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${feature.gradient} rounded-t-2xl`}></div>
-              <feature.icon className={`h-12 w-12 mb-4 bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`} />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
+              <div
+                className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${feature.gradient} rounded-t-2xl`}
+              ></div>
+              <feature.icon
+                className={`h-12 w-12 mb-4 bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                {feature.title}
+              </h3>
               <p className="text-gray-600">{feature.description}</p>
               <div className="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5 group-hover:h-full transition-all duration-300 rounded-2xl -z-10"></div>
             </div>
@@ -61,15 +70,21 @@ const Intro = () => {
         </div>
 
         <div className="bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Getting Started</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            Getting Started
+          </h2>
           <div className="space-y-4">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold">
                 1
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Create Your Account</h3>
-                <p className="text-gray-600">Sign up and set up your educator profile to get started.</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Create Your Account
+                </h3>
+                <p className="text-gray-600">
+                  Sign up and set up your educator profile to get started.
+                </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -77,8 +92,12 @@ const Intro = () => {
                 2
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Explore Tools</h3>
-                <p className="text-gray-600">Discover our suite of AI-powered teaching tools.</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Explore Tools
+                </h3>
+                <p className="text-gray-600">
+                  Discover our suite of AI-powered teaching tools.
+                </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -86,8 +105,12 @@ const Intro = () => {
                 3
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Create Content</h3>
-                <p className="text-gray-600">Start generating assignments, quizzes, and course materials.</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Create Content
+                </h3>
+                <p className="text-gray-600">
+                  Start generating assignments, quizzes, and course materials.
+                </p>
               </div>
             </div>
           </div>

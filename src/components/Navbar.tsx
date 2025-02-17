@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { GraduationCap, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { GraduationCap, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,16 +23,28 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-6">
-              <Link to="/services" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <Link
+                to="/services"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              >
                 SERVICES
               </Link>
-              <Link to="/about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <Link
+                to="/about"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              >
                 ABOUT US
               </Link>
-              <Link to="/login" className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+              <Link
+                to="/login"
+                className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              >
                 Login
               </Link>
-              <Link to="/signup" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+              <Link
+                to="/signup"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              >
                 Sign Up
               </Link>
             </div>
@@ -43,7 +55,11 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -53,16 +69,28 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
-            <Link to="/services" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+            <Link
+              to="/services"
+              className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
+            >
               SERVICES
             </Link>
-            <Link to="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+            <Link
+              to="/about"
+              className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
+            >
               ABOUT US
             </Link>
-            <Link to="/login" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+            <Link
+              to="/login"
+              className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
+            >
               Login
             </Link>
-            <Link to="/signup" className="block px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg">
+            <Link
+              to="/signup"
+              className="block px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg"
+            >
               Sign Up
             </Link>
           </div>
